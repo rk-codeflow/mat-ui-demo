@@ -1,45 +1,31 @@
 import './App.css';
-import { Button, Stack, Typography, createTheme, ThemeProvider } from '@mui/material'
-import { deepPurple } from '@mui/material/colors';
+import { Button, Stack, Typography, Container, ThemeProvider } from '@mui/material'
+import theme from './styles/Styles';
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#ff4d4d'
-    },
-    secondary: deepPurple
-  }
-})
 function App() {
   return (
-    <ThemeProvider  theme={theme}>
-      <div className="App">
-        <h2>This is the tutorial of Material UI</h2>
-        <Stack spacing={2}>
+    <Stack spacing={2} p={2}>
+      <Stack spacing={4.9} direction="row">
+        <Button variant='contained' color='primary'>Primary Button Type 1</Button>
+        <Button variant='outlined' color='secondary'>Secondary Button Type 1</Button>
+        <Button variant='text' color='error'>Error Button Type 1</Button>
+        <Button variant='contained' color='success'>Success Button Type 1</Button>
+      </Stack>
+
+      <ThemeProvider theme={theme}>
           <Stack spacing={4.9} direction="row">
-            <Button variant='text'>Text Button</Button>
-            <Button variant='contained'>Contained Button</Button>
-            <Button variant='outlined'>Outlined Button</Button>
-            <Button variant='text' color='error'>Error Button</Button>
-            <Button variant='contained' color='primary'>Success Button</Button>
-            <Button variant='contained' color='secondary'>Warning Button</Button>
+            <Button variant='contained' color='primary'>Primary Button Type 2</Button>
+            <Button variant='outlined' color='secondary'>Secondart Button Type 2</Button>
+            <Button variant='text' color='error'>Error Button Type 2</Button>
+            <Button variant='contained' color='success'>Success Button Type 2</Button>
           </Stack>
-    
-          <Typography variant="h1">h1 Heading</Typography>
-          <Typography variant="h2">h2 Heading</Typography>
-          <Typography variant="h3">h3 Heading</Typography>
-          <Typography variant="h4">h4 Heading</Typography>
-          <Typography variant="h5">h5 Heading</Typography>
-          <Typography variant="h6">h6 Heading</Typography>
-          <Typography variant="body 1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates.
-          </Typography>
-          <Typography variant="body 2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto, corrupti debitis tempora officia pariatur fuga, maiores a illum modi suscipit, enim culpa necessitatibus saepe quia quo assumenda id maxime!
-          </Typography>
-        </Stack>
-      </div>
-    </ThemeProvider>
+
+            <Container> 
+              <Typography variant='h4'>H4 heading</Typography>
+              <Typography variant='body 2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quod tenetur adipisci in a porro ullam, magni repellendus nesciunt dolores alias laboriosam? Nulla reprehenderit provident in exercitationem officiis, doloribus dignissimos officia a voluptatibus dolore natus atque recusandae aspernatur reiciendis quibusdam praesentium eum delectus debitis quae! Unde aliquid tempora, iure laudantium provident aliquam magnam dolorum vero, ipsam sit eum, aspernatur doloribus! Suscipit quisquam necessitatibus, exercitationem aliquam alias deleniti! Provident, harum commodi tempora repudiandae necessitatibus debitis quisquam, est aliquam magni, hic aspernatur nemo dicta. Soluta earum quod quis libero nesciunt id vitae provident unde, voluptatem, amet aut natus dicta veniam minus ipsam?</Typography>
+            </Container>
+      </ThemeProvider>
+    </Stack>
   );
 }
 
