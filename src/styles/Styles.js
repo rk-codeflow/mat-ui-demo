@@ -7,24 +7,6 @@ const Colors = {
   error: '#cf000f'
 }
 
-// https://www.programiz.com/javascript/library/array/join
-
-export const headingFont = createTheme({
-  typography: {
-    fontFamily: [
-      'Michroma', 'sans-serif'
-    ].join(',')
-  }
-})
-
-export const bodyFont = createTheme({
-  typography: {
-    fontFamily: [
-      'Karla', 'sans-serif'
-    ].join(',')
-  }
-})
-
 export const theme = createTheme({
   palette: {
     primary: {
@@ -56,6 +38,33 @@ export const theme = createTheme({
         }
       }
     }
+  },
+
+  breakpoints: {
+    values: {
+      xs: 100,
+      sm: 600,
+      md: 960,
+      lg: 1200,
+      xl: 1920
+    }
+  }
+})
+
+// https://www.programiz.com/javascript/library/array/join
+export const headingFont = createTheme({
+  typography: {
+    fontFamily: [
+      'Michroma', 'sans-serif'
+    ].join(',')
+  }
+})
+
+export const bodyFont = createTheme({
+  typography: {
+    fontFamily: [
+      'Karla', 'sans-serif'
+    ].join(',')
   }
 })
 
