@@ -7,23 +7,25 @@ const Colors = {
   error: '#cf000f'
 }
 
-// const buttonFont = createTheme({
-//   typography: {
-//     fontFamily: [
-//       'Karla', 'sans-serif'
-//     ].join(',')
-//   }
-// })
+// https://www.programiz.com/javascript/library/array/join
 
-// const bodyFont = createTheme({
-//   typography: {
-//     fontFamily: [
-//       'Michroma', 'sans-serif'
-//     ].join(',')
-//   }
-// })
+export const buttonFont = createTheme({
+  typography: {
+    fontFamily: [
+      'Karla', 'sans-serif'
+    ].join(',')
+  }
+})
 
-const theme = createTheme({
+export const bodyFont = createTheme({
+  typography: {
+    fontFamily: [
+      'Michroma', 'sans-serif'
+    ].join(',')
+  }
+})
+
+export const theme = createTheme({
   palette: {
     primary: {
       main: Colors.primary,
@@ -44,4 +46,3 @@ const theme = createTheme({
   // }
 })
 
-export default theme;
