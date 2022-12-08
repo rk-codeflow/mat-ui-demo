@@ -9,10 +9,10 @@ const Colors = {
 
 // https://www.programiz.com/javascript/library/array/join
 
-export const buttonFont = createTheme({
+export const headingFont = createTheme({
   typography: {
     fontFamily: [
-      'Karla', 'sans-serif'
+      'Michroma', 'sans-serif'
     ].join(',')
   }
 })
@@ -20,7 +20,7 @@ export const buttonFont = createTheme({
 export const bodyFont = createTheme({
   typography: {
     fontFamily: [
-      'Michroma', 'sans-serif'
+      'Karla', 'sans-serif'
     ].join(',')
   }
 })
@@ -40,9 +40,22 @@ export const theme = createTheme({
       main: Colors.error,
     }
   },
+
   // typography: {
   //   fontFamily: 'Michroma',
   //   fontWeightRegular: 400
-  // }
+  // },
+
+  // This is useful if you want to apply a fully custom design system to Material UI's components.
+  
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 20
+        }
+      }
+    }
+  }
 })
 
