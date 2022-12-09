@@ -47,7 +47,6 @@ export const theme = createTheme({
   // },
 
   // This is useful if you want to apply a fully custom design system to Material UI's components.
-  
   components: {
     MuiButton: {
       styleOverrides: {
@@ -56,6 +55,15 @@ export const theme = createTheme({
         }
       }
     }
-  }
+  },
+
+  breakpoints: {
+    values: {
+      mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1200,
+    },
+  },
 })
 
