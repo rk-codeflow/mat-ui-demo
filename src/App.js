@@ -1,6 +1,6 @@
 import './App.css';
 import { Button, Stack, Typography, Container, ThemeProvider, Box } from '@mui/material'
-import { theme, headingFont, bodyFont } from './styles/Styles';
+import { theme } from './styles/Styles';
 
 function App() {
   return (
@@ -23,12 +23,8 @@ function App() {
         </ThemeProvider>
   
         <Container> 
-          <ThemeProvider theme={headingFont}>
             <Typography variant='h4' gutterBottom>H4 heading</Typography>
-          </ThemeProvider>
-          <ThemeProvider theme={bodyFont}>
             <Typography variant='body2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quod tenetur adipisci in a porro ullam, magni repellendus nesciunt dolores alias laboriosam? Nulla reprehenderit provident in exercitationem officiis, doloribus dignissimos officia a voluptatibus dolore natus atque recusandae aspernatur reiciendis quibusdam praesentium eum delectus debitis quae! Unde aliquid tempora, iure laudantium provident aliquam magnam dolorum vero, ipsam sit eum, aspernatur doloribus! Suscipit quisquam necessitatibus, exercitationem aliquam alias deleniti! Provident, harum commodi tempora repudiandae necessitatibus debitis quisquam, est aliquam magni, hic aspernatur nemo dicta. Soluta earum quod quis libero nesciunt id vitae provident unde, voluptatem, amet aut natus dicta veniam minus ipsam?</Typography>
-          </ThemeProvider>
         </Container>
 
         <ThemeProvider theme={theme}>

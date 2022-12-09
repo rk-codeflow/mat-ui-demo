@@ -23,17 +23,16 @@ export const theme = createTheme({
     }
   },
 
-  // typography: {
-  //   fontFamily: 'Michroma',
-  //   fontWeightRegular: 400
-  // },
+  typography: {
+      fontFamily: `Michroma, sans-serif`
+  },
 
-  // This is useful if you want to apply a fully custom design system to Material UI's components.
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 20
+          borderRadius: 20,
+          fontFamily: `Karla, sans-serif`
         }
       }
     }
@@ -47,23 +46,6 @@ export const theme = createTheme({
       lg: 1200,
       xl: 1920
     }
-  }
-})
-
-// https://www.programiz.com/javascript/library/array/join
-export const headingFont = createTheme({
-  typography: {
-    fontFamily: [
-      'Michroma', 'sans-serif'
-    ].join(',')
-  }
-})
-
-export const bodyFont = createTheme({
-  typography: {
-    fontFamily: [
-      'Karla', 'sans-serif'
-    ].join(',')
   }
 })
 
