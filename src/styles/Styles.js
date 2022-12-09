@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 
-const Colors = {
+const colors = {
   primary: '#00b5cc',
   secondary: '#4871f7',
   success: '#26c281',
@@ -10,16 +10,16 @@ const Colors = {
 export const theme = createTheme({
   palette: {
     primary: {
-      main: Colors.primary,
+      main: colors.primary,
     },
     secondary: {
-      main: Colors.secondary,
+      main: colors.secondary,
     },
     success: {
-      main: Colors.success,
+      main: colors.success,
     },
     error: {
-      main: Colors.error,
+      main: colors.error,
     }
   },
 
